@@ -10,7 +10,6 @@ let initialState = {
     KamyonCSayısı : "",
     MotorCSayısı : "",
     Araçlar : "",
-    Araç : "",
 }
 
 const OtoparkReducer = (state = initialState, action) => {
