@@ -1,17 +1,21 @@
+//Gözlemci objeleri için factory üretim(Factory Pattern)
+const otoparkFactory = require("../OtoparkFactory/Interface/OtoparkFactory");
+//Gözlemciler(Observer Pattern)
 let initialState = {
-    NormalPark : "",
-    MotorPark : "",
-    ToplamPark : "",
-    AraçSayısı : "",
-    ArabaSayısı : "",
-    KamyonSayısı : "",
-    MotorSayısı : "",
-    ArabaCSayısı : "",
-    KamyonCSayısı : "",
-    MotorCSayısı : "",
-    Araçlar : "",
+    NormalPark : otoparkFactory.createState("NormalPark"),
+    MotorPark : otoparkFactory.createState("MotorPark"),
+    ToplamPark : otoparkFactory.createState("ToplamPark"),
+    AraçSayısı : otoparkFactory.createState("AraçSayısı"),
+    ArabaSayısı : otoparkFactory.createState("ArabaSayısı"),
+    KamyonSayısı : otoparkFactory.createState("KamyonSayısı"),
+    MotorSayısı : otoparkFactory.createState("MotorSayısı"),
+    ArabaCSayısı : otoparkFactory.createState("ArabaCSayısı"),
+    KamyonCSayısı : otoparkFactory.createState("KamyonCSayısı"),
+    MotorCSayısı : otoparkFactory.createState("MotorCSayısı"),
+    Araçlar : otoparkFactory.createState("Araçlar"),
 }
 
+//(Singleton Pattern)State->{Gözlemciler}
 const OtoparkReducer = (state = initialState, action) => {
     switch (action.type) {
         case "NORMAL_PARKING":{

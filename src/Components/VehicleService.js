@@ -159,7 +159,7 @@ const VehicleService = () => {
           </View>
         </View>
         <Seperator height={Display.setHeight(2)}/>
-        <Text style={styles.SubText2}>Motor Park Yeri</Text>
+        <Text style={styles.SubText2}>Boş Motor Park Yeri</Text>
         <View style={styles.inputContainer} >
           <View style={styles.inputSubContainer} >
             <TextInput placeholder={motorPValue}

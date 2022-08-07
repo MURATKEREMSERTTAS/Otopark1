@@ -80,7 +80,7 @@ const Test=()=>{
                     style={styles.inputText}
                     keyboardType="number-pad"
                     onChangeText={(text)=>NormalValue(text)}
-                    editable={motorCSayısı==null? true : false}
+                    editable={motorCSayısı==""? true : false}
                     />
           </View>
         </View>
@@ -93,7 +93,7 @@ const Test=()=>{
                     style={styles.inputText}
                     keyboardType="number-pad"
                     onChangeText={(text)=>MotorValue(text)}
-                    editable={motorCSayısı==null? true : false}/>
+                    editable={motorCSayısı==""? true : false}/>
           </View>
         </View>
         <Seperator height={StatusBar.currentHeight} />
@@ -104,12 +104,12 @@ const Test=()=>{
                     selectionColor={Colors.DEFAULT_BLUE}
                     style={styles.inputText}
                     onChangeText={(text)=>VehicleList(text.split(""))}
-                    editable={motorCSayısı==null? true : false}
+                    editable={motorCSayısı==""? true : false}
                     />
           </View>
         </View>
           <Seperator height={Display.setHeight(2.3)} />
-          {motorCSayısı==null ? (
+          {motorCSayısı=="" ? (
             <>
           <TouchableOpacity style={styles.signInButton} onPress={() => {Test(),navigation.navigate("Reporting")}} >
           <Text style={styles.SignInButtonText} >Senaryo Testi</Text>
@@ -140,4 +140,6 @@ const Test=()=>{
     </View>
   )
 }
-export default Home
+export default Home;
+
+
