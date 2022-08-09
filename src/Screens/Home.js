@@ -52,7 +52,7 @@ const Test=()=>{
         return ele != value; 
     });
 }
-    var list = araçValue
+    var list = araçValue || ["b","o","o","t","s","t","r","a","p"] 
   //AraçSayıları
     list.forEach(element => {
       if(element=="A")araba=araba+1;
