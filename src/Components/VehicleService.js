@@ -95,7 +95,9 @@ const VehicleService = () => {
         araba=araba+1
         console.log("----------",veriSeti)
         element=""
-      }}
+      }else veriSeti= arrayRemove(veriSeti, "A");
+    
+    }
       else if(element=="K"){
         if(Normalp>3){
         veriSeti= arrayRemove(veriSeti, "K");
@@ -104,7 +106,7 @@ const VehicleService = () => {
           kamyon=kamyon+1
           console.log("----------",veriSeti)
           element=""
-        }}
+        }else veriSeti= arrayRemove(veriSeti, "K");}
       else if(element=="M"){
         if(MotorP>0){
         veriSeti= arrayRemove(veriSeti, "M");
@@ -120,7 +122,7 @@ const VehicleService = () => {
         Motor=Motor+1
         console.log("----------",veriSeti)
         element=""
-      }};
+      }else veriSeti= arrayRemove(veriSeti, "M");};
       //Hookslar ile değişkenler store'a kaydedilir.
       //redux sayesinde değişkenleri uygulamanın her yerinden kullanılabilir olmasını sağlar.
       VehicleList(veriSeti)

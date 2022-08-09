@@ -46,12 +46,21 @@ const MotorCSayısı = useSelector((state) => state.OtoparkReducer.MotorCSayıs�
 const motorCSayısı =MotorCSayısı.MotorCSayısı
 const [loading,setLoading] = useState(false);
 const Test=()=>{
+  function arrayRemove(arr, value) { 
+    
+    return arr.filter(function(ele){ 
+        return ele != value; 
+    });
+}
+    var list = araçValue
   //AraçSayıları
-    araçValue.forEach(element => {
+    list.forEach(element => {
       if(element=="A")araba=araba+1;
       else if(element=="K")kamyon=kamyon+1;
       else if(element=="M")Motor= Motor+1;
+      else if (element!="A" || element!="K" || element!="M")list=arrayRemove(list,element);
       Toplam=kamyon+araba+Motor;
+      VehicleList(list)
       AraçReducer(Toplam.toLocaleString())
       ArabaReducer(araba.toLocaleString())
       KamyonReducer(kamyon.toLocaleString())
