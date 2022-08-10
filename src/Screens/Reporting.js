@@ -10,7 +10,7 @@ const Reporting = ({navigation}) => {
       <StatusBar barStyle="dark-content" backgroundColor={Colors.DEFAULT_WHITE} translucent />
       <Seperator height={Display.setHeight(6)}  />
       <View style={styles.headerContainer} >
-        <Text style={styles.headerText} >Otapark Yönetim Sistemi</Text>
+        <Text style={styles.headerText} >Otopark Yönetim Sistemi</Text>
         <Seperator height={Display.setHeight(6)}  />
       </View>
     <VehicleService/>

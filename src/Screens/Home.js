@@ -78,7 +78,7 @@ const Test=()=>{
       <StatusBar barStyle="dark-content" backgroundColor={Colors.DEFAULT_WHITE} translucent />
       <Seperator height={Display.setHeight(6)}  />
       <View style={styles.headerContainer} >
-        <Text style={styles.headerText} >Otapark Yönetim Sistemi</Text>
+        <Text style={styles.headerText} >Otopark Yönetim Sistemi</Text>
         <Seperator height={Display.setHeight(6)}  />
       </View>
         <View style={styles.inputContainer} >
@@ -108,7 +108,7 @@ const Test=()=>{
         <Seperator height={StatusBar.currentHeight} />
         <View style={styles.inputContainer} >
           <View style={styles.inputSubContainer} >
-            <TextInput placeholder='AKMAKMAKMAKM'
+            <TextInput placeholder='Araç Tiplerini Giriniz(AKMAKMAKMAKM)'
                     placeholderTextColor={Colors.DEFAULT_GREY}
                     selectionColor={Colors.DEFAULT_BLUE}
                     style={styles.inputText}
