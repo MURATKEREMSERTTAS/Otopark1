@@ -84,7 +84,7 @@ const Test=()=>{
         <View style={styles.inputContainer} >
           <View style={styles.inputSubContainer} >
             <TextInput placeholder="Normal Park Kapasitesini Giriniz"
-                    placeholderTextColor={Colors.DEFAULT_BLUE}
+                    placeholderTextColor={Colors.DEFAULT_GREY}
                     selectionColor={Colors.DEFAULT_BLUE}
                     style={styles.inputText}
                     keyboardType="number-pad"
@@ -97,7 +97,7 @@ const Test=()=>{
         <View style={styles.inputContainer} >
           <View style={styles.inputSubContainer} >
             <TextInput placeholder='Motorsiklet Park Kapasitesini Giriniz'
-                    placeholderTextColor={Colors.DEFAULT_BLUE}
+                    placeholderTextColor={Colors.DEFAULT_GREY}
                     selectionColor={Colors.DEFAULT_BLUE}
                     style={styles.inputText}
                     keyboardType="number-pad"
@@ -109,7 +109,7 @@ const Test=()=>{
         <View style={styles.inputContainer} >
           <View style={styles.inputSubContainer} >
             <TextInput placeholder='AKMAKMAKMAKM'
-                    placeholderTextColor={Colors.DEFAULT_BLUE}
+                    placeholderTextColor={Colors.DEFAULT_GREY}
                     selectionColor={Colors.DEFAULT_BLUE}
                     style={styles.inputText}
                     onChangeText={(text)=>VehicleList(text.split(""))}
@@ -126,7 +126,7 @@ const Test=()=>{
           <Seperator height={Display.setHeight(1)} />
           <Text style={styles.SubText} >Otopark Boş</Text>
           <Seperator height={Display.setHeight(1)} />
-          <Text style={styles.SubText}>Minimum otopark kapasitesi 5 olmalıdır.</Text>
+          <Text style={styles.SubText}>Araba=A,Kamyon=K,Motor=C</Text>
           <View style={styles.animationContainer} >
           <LottieView source={require("../Assets/animations/57463-parking-concept.json")}  renderMode="AUTOMATIC" autoPlay loop/>
           </View> 
